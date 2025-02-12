@@ -15,9 +15,17 @@ import RenderCounter from './Components/RenderCounter'
 import AppA from './Components/ThemeButton'
 import NotesManager from './Components/GestNote'
 import Events from './Components/Events'
+import TodoList from './Components/ToDo'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const initialTasks = [
+    { name: "Finir le projet React", priority: "Haute", completed: false },
+    { name: "Préparer le repas", priority: "Moyenne", completed: false },
+    { name: "Aller courir", priority: "Basse", completed: false }
+  ];
+
 
   return (
     <>
@@ -53,6 +61,10 @@ function App() {
       <div className="App">
       <Events />
       </div>
+
+      {/* <div className="App">
+      <TodoList initialTasks={initialTasks} />
+      </div> */}
     </>
   );
 }
