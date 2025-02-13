@@ -13,7 +13,7 @@ export default function Events() {
   }, [message]);
 
   useEffect(() => {
-    setTimeout(() => setMessage("Bienvenue aux événements !"), 1000);
+    setTimeout(() => setMessage("Bienvenue aux événements !"), 2000);
   }, []);
 
   const bookEvent = (index) => {

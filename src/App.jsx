@@ -16,6 +16,7 @@ import AppA from './Components/ThemeButton'
 import NotesManager from './Components/GestNote'
 import Events from './Components/Events'
 import TodoList from './Components/ToDo'
+import Products from './Components/Products'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -58,13 +59,17 @@ function App() {
         <br />
 
       </div> */}
-      <div className="App">
+      {/* <div className="App">
       <Events />
-      </div>
+      </div> */}
 
       {/* <div className="App">
       <TodoList initialTasks={initialTasks} />
       </div> */}
+
+      <div className="App">
+        <Products />
+      </div>
     </>
   );
 }
